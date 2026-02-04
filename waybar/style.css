@@ -1,0 +1,58 @@
+* {
+    font-family: JetBrains Mono, sans-serif;
+    font-size: 12px;
+    color: #202b30;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+box.modules-center {
+    background: #c4d5dd;
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+#clock,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#pulseaudio, 
+#network,
+#tray,
+#backlight {
+    padding: 4px 10px;
+    margin: 0 4px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    transition: background 0.2s ease;
+}
+
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#battery:hover,
+#pulseaudio:hover,
+#network:hover,
+#tray:hover,
+#backlight:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+#battery.warning {
+    background: #f9e2af;
+    color: #1e1e2e;
+}
+
+#battery.critical {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+#pulseaudio.muted {
+    background: rgba(255, 255, 255, 0.04);
+    color: #a6adc8;
+}

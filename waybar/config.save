@@ -1,0 +1,44 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": 5,
+  "height": 32,
+
+  "modules-left": [" "],
+  "modules-center": ["temperature", "clock", "battery"],
+  "modules-right": ["pulseaudio"],
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "format": "{name}",
+    "format-focused": "{name}",
+    "format-urgent": "{name}"
+  },
+
+  "clock": {
+    "format": "{:%H:%M}"
+  },
+
+  "cpu": {
+    "format": "{}%",
+    "tooltip": false
+  },
+
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+    "critical-threshold": 80,
+    "format": "{temperatureC}°C"
+  },
+
+  "battery": {
+    "format": "{capacity}%",
+    "format-charging": "{capacity}% ⚡",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "{volume}%",
+    "format-muted": "muted",
+    "tooltip": false
+  }
+}
